@@ -136,7 +136,7 @@ Instagram: @imarjunarz
 ## chmod +x *
 ## python2 ckdeface.py
 
-now your run the tool easly 
+now you can run the tool easily 
 ### for more subscribe my YouTube channel 
 # https://youtube.com/CYBERKALLAN2
 
