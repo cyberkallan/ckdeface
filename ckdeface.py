@@ -1,128 +1,119 @@
-#!/usr/bin/python
-############################
-#  http://Cyberkallan.Com  #
-############################
-mess = """======================================================
-             CKDeface html Generator        
-                        Cyberkallan.
-======================================================"""
+# -*- coding: utf-8 -*-
+import os
 
-print mess
-title = raw_input("Enter the title: ")
-heading = raw_input("Enter the heading text: ")
-imagelink = raw_input("Enter the principal image location: ")
-bgimage = raw_input("Enter the background image (Optional): ")
-message = raw_input("Enter the message(Use <br> to step a line under): ")
-textcolor = raw_input("Enter the font color (e.g. white): ")
-youtubeid = raw_input("Enter the youtube ID: ")
+# Banner
+banner = """
+===========================================================
+██╗  ██╗ █████╗  ██████╗ ███████╗██████╗ ███████╗
+██║  ██║██╔══██╗██╔════╝ ██╔════╝██╔══██╗██╔════╝
+███████║███████║██║  ███╗█████╗  ██████╔╝█████╗  
+██╔══██║██╔══██║██║   ██║██╔══╝  ██╔═══╝ ██╔══╝  
+██║  ██║██║  ██║╚██████╔╝███████╗██║     ███████╗
+╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝     ╚══════╝
+===========================================================
+🔹 Advanced Deface Page Generator by Arjun ARZ 🔹
+GitHub: CyberKallan | Instagram: @imarjunarz
+===========================================================
+"""
+print(banner)
 
+# User Inputs
+title = input("Enter the Title: ")
+heading = input("Enter the Heading Text: ")
+imagelink = input("Enter Image URL: ")
+bgimage = input("Enter Background Image URL: ")
+message = input("Enter Your Message (Use <br> for line breaks): ")
+textcolor = input("Enter Font Color (e.g., white, red, green): ")
+youtube_link = input("Enter YouTube Music URL (Direct Link): ")
+contact_email = input("Enter Your Contact Email: ")
 
-#Open the index
-fo = open("index.html","w")
+# Theme Selection
+themes = {
+    "1": "Hacker Style",
+    "2": "Matrix Rain",
+    "3": "Dark Glitch",
+    "4": "Cyberpunk Neon",
+    "5": "Retro Terminal",
+    "6": "Minimal Dark"
+}
 
-messagescript1 = """<html><head><title>"""
+print("\nSelect a Theme:")
+for key, value in themes.items():
+    print(f"{key}. {value}")
 
-messagescript2 = title
+theme_choice = input("\nEnter Theme Number (1-6): ")
+selected_theme = themes.get(theme_choice, "Hacker Style")
 
-messagescript3 = """</title></head>
+# Generate HTML File
+html_content = f"""
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <style>
+        body {{
+            background: url('{bgimage}') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Orbitron', sans-serif;
+            color: {textcolor};
+            text-align: center;
+        }}
+        .container {{
+            margin-top: 50px;
+        }}
+        .contact-btn {{
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background: red;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }}
+        .contact-info {{
+            display: none;
+            margin-top: 20px;
+            font-size: 20px;
+            color: yellow;
+        }}
+        .glitch {{
+            font-size: 40px;
+            text-shadow: 0px 0px 5px red, 0px 0px 10px cyan;
+            animation: glitch 1s infinite alternate;
+        }}
+        @keyframes glitch {{
+            0% {{ text-shadow: 2px 2px 5px red, -2px -2px 5px cyan; }}
+            100% {{ text-shadow: -2px -2px 5px red, 2px 2px 5px cyan; }}
+        }}
+    </style>
+</head>
 <body>
-<br>
-<link href='http://fonts.googleapis.com/css?family=Orbitron:700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet' type='text/css'>
-<body bgcolor="#000000" background ="""
+    <div class="container">
+        <h1 class="glitch">{heading}</h1>
+        <img src="{imagelink}" width="400px">
+        <p>{message}</p>
+        
+        <button class="contact-btn" onclick="showEmail()">Contact Us</button>
+        <div class="contact-info" id="contact-info">{contact_email}</div>
+    </div>
 
-messagescript4 = bgimage
+    <script>
+        function showEmail() {{
+            document.getElementById("contact-info").style.display = "block";
+        }}
+    </script>
 
-messagescript5 = """><div class='CenterDiv'>
-<center>
-<h1><center><font color=\"red\" face=Orbitron>"""
+    <!-- Background Music -->
+    <iframe width="0" height="0" src="{youtube_link}?autoplay=1&loop=1" frameborder="0"></iframe>
+</body>
+</html>
+"""
 
-messagescript6 = heading
+# Save the file
+with open("index.html", "w", encoding="utf-8") as file:
+    file.write(html_content)
 
-messagescript7 = """<h1></font>
-<img src=""" 
-
-messagescript8 = imagelink
-
-messagescript9 = """ width=450px height=340px>
-<body onload="init()"></body>
-<body>
-<div id="bulle"></div>"""
-
-messagescript10 = """
-<script language=\"JavaScript\">
-var i=0
-var j=0
-var texteNE, affiche
-var texte=\"<br><br><br><br><br><font face=Orbitron color="""
-
-messagescript11 = textcolor
-
-messagescript12 = """ size=4>"""
-
-messagescript13 = message 
-
-messagescript14 = """<br><br></font><br></b></div>\"
-var ie = (document.all);
-var ne = (document.layers); 
-function init(){
-texteNE='';
-machine_a_ecrire();
-}
-function machine_a_ecrire(){
-texteNE=texteNE+texte.charAt(i)
-affiche='<font face=Orbitron size=1 color=#ffffff><strong>'+texteNE+'</strong></font>'
-if (texte.charAt(i)=="<") {
-j=1
-}
-if (texte.charAt(i)==">") {
-j=0
-}
-if (j==0) {
-if (document.getElementById) { // avec internet explorer
-document.getElementById("bulle").innerHTML = affiche;
-}
-}
-if (i<texte.length-1){
-i++
-setTimeout("machine_a_ecrire()",70)
-}
-else
-return
-}
-</script><font face="Orbitron" size="1"><blink><span style="color: rgb(255, 255, 255);"><b><font color=lime size=4></font></b></u></blink><br></font></b>
-<a href="http://veneno.ovh"><img style="position:fixed;bottom:0px;z-index:1000;right:-10px;"  src="http://i.imgur.com/dwxcIKA.gif" type="image/gif" width="150"></a></body>
-<!-- CSS --><style>
-.CenterDiv{width:650px;border:1px #ff0000 solid;padding:5px;margin:0px auto; background: url('http://i.imgur.com/sDbaMsW.gif');}
-</style>
-<br>
-<br>
-<br>
-<iframe width="0" height="0" src="http://www.youtube.com/v/"""
-
-messagescript15 = youtubeid
-
-messagescript16 = """&autoplay=1" frameborder="0"></iframe>"""
-
-
-fo.write(messagescript1)
-fo.write(messagescript2)
-fo.write(messagescript3)
-fo.write(messagescript4)
-fo.write(messagescript5)
-fo.write(messagescript6)
-fo.write(messagescript7)
-fo.write(messagescript8)
-fo.write(messagescript9)
-fo.write(messagescript10)
-fo.write(messagescript11)
-fo.write(messagescript12)
-fo.write(messagescript13)
-fo.write(messagescript14)
-fo.write(messagescript15)
-fo.write(messagescript16)
-
-print "\The page has been generated as: index.html"
-
-fo.close()
+print("\n✅ The deface page has been generated as 'index.html' Follow @imarjunarz for more")
