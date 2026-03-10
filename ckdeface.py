@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 """
 ╔══════════════════════════════════════════════════════════════════╗
-║          HagePe Deface Generator  v4.0  —  BEAST EDITION        ║
+║          CK-Deface Generator  v4.0  —  BEAST EDITION        ║
 ║          Developer  : CyberKallan  (GitHub: CyberKallan)        ║
-║          Recoded by : Hypervenom   (Instagram: @imarjunarz)     ║
+║          Recoded by : Hypervenom   (Github: Hypervenom)     ║
 ╚══════════════════════════════════════════════════════════════════╝
 
   Run:  python3 hagepev4.py
