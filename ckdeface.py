@@ -1,10 +1,11 @@
+
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 ╔══════════════════════════════════════════════════════════════════╗
-║          CK-Deface Generator  v4.0  —  BEAST EDITION        ║
-║          Developer  : CyberKallan  (GitHub: CyberKallan)        ║
-║          Recoded by : Hypervenom   (Github: Hypervenom)     ║
+║          CK-Deface v2.0  —  BEAST EDITION                                   ║
+║          Developer  : CyberKallan  (GitHub: CyberKallan)                    ║
+║          Recoded by : Hypervenom   (Github: Hypervenoms)                    ║
 ╚══════════════════════════════════════════════════════════════════╝
 
   Run:  python3 hagepev4.py
@@ -389,7 +390,7 @@ def build_html(cfg):
   <div id="message-box">{cfg.get('message','')}</div>
   <div class="divider"></div>
   <div id="contacts">{email_btn}</div>
-  <footer>HagePe v4.0 &nbsp;|&nbsp; {ts} &nbsp;|&nbsp; {tname} &nbsp;|&nbsp; Dev: CyberKallan &nbsp;|&nbsp; Recoded by: Hypervenom</footer>
+  <footer>CK-Deface v4.0 &nbsp;|&nbsp; {ts} &nbsp;|&nbsp; {tname} &nbsp;|&nbsp; Dev: CyberKallan &nbsp;|&nbsp; Recoded by: Hypervenom</footer>
 </div>
 {media_html}
 <script>
@@ -577,7 +578,7 @@ h1{{font-family:'Orbitron',monospace;font-size:clamp(1rem,3.5vw,1.5rem);font-wei
     <div class="pl" id="pl">Preparing file...</div>
   </div>
   <a class="dlbtn" id="dlbtn" href="/download/{safe}" download="{filename}">⬇ &nbsp; DOWNLOAD INDEX.HTML</a>
-  <div class="credits">HagePe v4.0 &nbsp;|&nbsp; Developer: CyberKallan &nbsp;|&nbsp; Recoded by: Hypervenom</div>
+  <div class="credits">CK-Deface v4.0 &nbsp;|&nbsp; Developer: CyberKallan &nbsp;|&nbsp; Recoded by: Hypervenom</div>
 </div>
 <script>
 (function(){{
@@ -659,18 +660,18 @@ def splash():
     clr()
     rows = [
         "",
-        f"{CYN}╔{'═'*62}╗{R}",
-        f"{CYN}║{R}  {WHT}{BLD}██╗  ██╗ █████╗  ██████╗ ███████╗██████╗ ███████╗{R}         {CYN}║{R}",
-        f"{CYN}║{R}  {WHT}{BLD}██║  ██║██╔══██╗██╔════╝ ██╔════╝██╔══██╗██╔════╝{R}         {CYN}║{R}",
-        f"{CYN}║{R}  {WHT}{BLD}███████║███████║██║  ███╗█████╗  ██████╔╝█████╗  {R}         {CYN}║{R}",
-        f"{CYN}║{R}  {WHT}{BLD}██╔══██║██╔══██║██║   ██║██╔══╝  ██╔═══╝ ██╔══╝  {R}         {CYN}║{R}",
-        f"{CYN}║{R}  {WHT}{BLD}██║  ██║██║  ██║╚██████╔╝███████╗██║     ███████╗{R}         {CYN}║{R}",
-        f"{CYN}║{R}  {WHT}{BLD}╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝     ╚══════╝{R}         {CYN}║{R}",
-        f"{CYN}╠{'═'*62}╣{R}",
-        f"{CYN}║{R}  {MGT}{BLD}⚡  BEAST EDITION v4.0  —  Advanced Deface Generator  ⚡{R}  {CYN}║{R}",
-        f"{CYN}║{R}  {YLW}Developer  : CyberKallan       GitHub  : CyberKallan{R}       {CYN}║{R}",
-        f"{CYN}║{R}  {GRN}Recoded by : Hypervenom        Insta   : @imarjunarz{R}        {CYN}║{R}",
-        f"{CYN}╚{'═'*62}╝{R}",
+        f"{CYN}╔{'═'*66}╗{R}",
+        f"{CYN}║{R}  {WHT}{BLD} ██████╗██╗  ██╗      ██████╗ ███████╗███████╗ █████╗  ██████╗███████╗{R}  {CYN}║{R}",
+        f"{CYN}║{R}  {WHT}{BLD}██╔════╝██║ ██╔╝      ██╔══██╗██╔════╝██╔════╝██╔══██╗██╔════╝██╔════╝{R}  {CYN}║{R}",
+        f"{CYN}║{R}  {WHT}{BLD}██║     █████╔╝  ████╗██║  ██║█████╗  █████╗  ███████║██║     █████╗  {R}  {CYN}║{R}",
+        f"{CYN}║{R}  {WHT}{BLD}██║     ██╔═██╗  ╚═══╝██║  ██║██╔══╝  ██╔══╝  ██╔══██║██║     ██╔══╝  {R}  {CYN}║{R}",
+        f"{CYN}║{R}  {WHT}{BLD}╚██████╗██║  ██╗      ██████╔╝███████╗██║     ██║  ██║╚██████╗███████╗{R}  {CYN}║{R}",
+        f"{CYN}║{R}  {WHT}{BLD} ╚═════╝╚═╝  ╚═╝      ╚═════╝ ╚══════╝╚═╝     ╚═╝  ╚═╝ ╚═════╝╚══════╝{R}  {CYN}║{R}",
+        f"{CYN}╠{'═'*66}╣{R}",
+        f"{CYN}║{R}  {MGT}{BLD}⚡  BEAST EDITION v2.0  —  Advanced Deface Page Generator  ⚡{R}    {CYN}║{R}",
+        f"{CYN}║{R}  {YLW}Developer  : CyberKallan       GitHub  : CyberKallan{R}           {CYN}║{R}",
+        f"{CYN}║{R}  {GRN}Recoded by : Hypervenom        Github   : Hypervenoms{R}            {CYN}║{R}",
+        f"{CYN}╚{'═'*66}╝{R}",
         "",
     ]
     for row in rows:
@@ -836,7 +837,7 @@ def show_credits():
   {CYN}{BLD}╔══════════════════════════════════════════════════════════╗
   ║                    ABOUT THIS TOOL                       ║
   ╠══════════════════════════════════════════════════════════╣{R}
-  {WHT}  Tool       {CYN}HagePe Deface Generator  v4.0 BEAST EDITION{R}
+  {WHT}  Tool       {CYN}CK-Deface v4.0 BEAST EDITION{R}
   {WHT}  Developer  {YLW}CyberKallan{R}  {DIM}— GitHub: CyberKallan{R}
   {WHT}  Recoded by {BLD}{WHT}Hypervenom{R}  {DIM}— Instagram: @imarjunarz{R}
 
