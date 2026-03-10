@@ -26,19 +26,6 @@ CKDeface - Advanced Deface Page Generator
 
 
 
----
-
-📸 Demo Screenshots
-
-Deface Page Output:
-
-
-Background Image Example:
-
-
-
-
----
 
 📥 Installation & Usage
 
