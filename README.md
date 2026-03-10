@@ -22,7 +22,7 @@ CKDeface - Advanced Deface Page Generator
 
 ✅ One-File Script – No Multiple Folders Required
 
-✅ Banner with Webshell/Hacker Logo
+✅ Banner with Webshell/Hacker Logo.
 
 
 
@@ -148,23 +148,6 @@ now you can run the tool easily
  $pkg install python2 -y (enter)
  
 
- 
-
- 
-
- 
-
-
-
-    ##+|+ HOW TO RUN THE TOOLS +|+
-    $ git clone https://github.com/cyberkallan/ckdeface
-    cd ckdeface
-    chmod +x *
-    python2 ckdeface.py
-    (image uploading section :- നിങ്ങൾ ഏതെങ്കിലും ഒരു വെബ്സൈറ്റിൽ അല്ലെങ്കിൽ ഒരു ക്ലൗഡ് സ്റ്റോറേജ് നിങ്ങളുടെ deface ഇമേജ് അപ്‌ലോഡ് ചെയ്യുക അതിനുശേഷം ആ ഇമേജിഎൻറെ ലിങ്ക് ഇവിടെ പേസ്റ്റ് ചെയ്യുക.
-    Enter the msg section :- നിങ്ങൾ പറയാൻ ഉദ്ദേശിക്കുന്ന സന്ദേശം അല്ലെങ്കിൽ നിങ്ങളുടെ ടീമിലുള്ള വ്യക്തികളുടെ പേര് നൽകുക.
-    
-    #ഇൻഡക്സ് എച്ച്ടിഎംഎൽ ഫയൽ ckdeface എന്ന് പറഞ്ഞ് ഫോൾഡറിൽ നിന്ന് നിങ്ങൾക്ക് നിങ്ങൾക്ക് എവിടെ വേണമെങ്കിലും കോപ്പി ചെയ്തു കൊണ്ടുപോകാനായി - cp index.html /your folders name
     
     ##for more subscribe my youtube channel
 
