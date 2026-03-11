@@ -319,7 +319,7 @@ python3 ckdeface.py
 
 ```
 ckdeface/
-├── hagepev4.py          ←  Everything. One file. Just run this.
+├── ckdeface.py          ←  Everything. One file. Just run this.
 ├── output/              ←  Generated HTML pages land here
 │   └── your_page.html
 └── profiles/
