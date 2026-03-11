@@ -233,7 +233,7 @@ cd ckdeface
 ### Step 2 — Run
 
 ```bash
-python3 hagepev4.py
+python3 ckdeface.py
 ```
 
 > ✅ **Python 3.9+** &nbsp;·&nbsp; ✅ **No pip installs** &nbsp;·&nbsp; ✅ **Pure stdlib only**
